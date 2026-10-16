@@ -250,9 +250,7 @@ fn read_report(
         }
     }
     if !granted {
-        return Err(format!(
-            "El firmware no concedió permiso de lectura para el reporte {report_id:#04x}"
-        ));
+        return Err("El ratón no responde. Si está suspendido, muévelo para despertarlo; volveremos a conectar automáticamente.".into());
     }
 
     // 3. Read the actual report using its exact packet length.
@@ -260,7 +258,7 @@ fn read_report(
     buf[0] = report_id;
     let n = cmd.get_feature_report(&mut buf).map_err(|e| format!("No se pudo leer el reporte: {e}"))?;
     if n < 3 || buf[0] != report_id || buf[1] != read_len {
-        return Err(format!("Respuesta HID incompleta o incorrecta para {report_id:#04x}"));
+        return Err("El ratón devolvió una respuesta incompleta. Vuelve a intentarlo con el ratón despierto.".into());
     }
     buf.truncate(n);
     Ok(buf)
