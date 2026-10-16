@@ -13,3 +13,5 @@ Instala esta versión para actualizar accesos antiguos; descargar un portable no
 Validado físicamente en un X11 por cable y 2,4 GHz. Consulta la guía de uso y la validación del repositorio para los límites: X11SE/Bluetooth/base RGB y cuentas externas no están validados; no incluye editor de macros. Binarios sin firma comercial.
 
 En 0.3.3 se redibujan los contornos según las referencias del X11 negro: proporción superior, perspectiva de tres cuartos, separación de clics, rueda estriada, laterales y LED. Los marcadores aparecen al pasar el cursor o enfocar con teclado. La ilustración utiliza trazados SVG y sombreado procedural; no incorpora fotografías.
+
+Batería: distintivo propio de alto contraste en la bandeja, con cifras blancas grandes sobre fondo oscuro y nivel inferior. Porcentaje legible también en la barra lateral, independiente del color de estado.

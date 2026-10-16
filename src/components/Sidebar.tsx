@@ -113,7 +113,7 @@ export function Sidebar({
               }}
             />
           </div>
-          <span className="mono small" style={{ color, minWidth: 34, textAlign: "right" }}>
+          <span className="battery-readout">
             {battery?.known ? `${pct}%` : "—"}
           </span>
         </div>
