@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
+import packageInfo from "../../package.json";
 import type { ReactNode } from "react";
 import {
   BatteryIcon,
@@ -135,10 +136,9 @@ export function Sidebar({
         </button>
 
         <span className="dp-version">
-          <KeyboardIcon width={12} height={12} /> AS x11 v0.3.2
+          <KeyboardIcon width={12} height={12} /> AS x11 v{packageInfo.version}
         </span>
       </div>
     </aside>
   );
 }
-
