@@ -10,13 +10,13 @@ React, TypeScript, Tauri y Rust; comunicación HID nativa por cable USB y recept
 
 **[Última versión e instaladores](https://github.com/minysito/AS-x11/releases/latest)**
 
-| Descarga 0.3.2 | Uso |
+| Descarga 0.3.3 | Uso |
 | --- | --- |
-| [Instalador EXE](https://github.com/minysito/AS-x11/releases/download/v0.3.2/AS-x11-0.3.2-setup.exe) | Opción recomendada; actualiza los accesos |
-| [Instalador MSI](https://github.com/minysito/AS-x11/releases/download/v0.3.2/AS-x11-0.3.2-x64.msi) | Instalación alternativa |
-| [Portable](https://github.com/minysito/AS-x11/releases/download/v0.3.2/AS-x11-0.3.2.exe) | Ejecutar sin instalar |
-| [Fuentes completas](https://github.com/minysito/AS-x11/releases/download/v0.3.2/AS-x11-0.3.2-source.zip) | Código, recursos, licencias y herramientas de compilación |
-| [SHA256](https://github.com/minysito/AS-x11/releases/download/v0.3.2/SHA256.txt) | Comprobar integridad de los archivos |
+| [Instalador EXE](https://github.com/minysito/AS-x11/releases/download/v0.3.3/AS-x11-0.3.3-setup.exe) | Opción recomendada; actualiza los accesos |
+| [Instalador MSI](https://github.com/minysito/AS-x11/releases/download/v0.3.3/AS-x11-0.3.3-x64.msi) | Instalación alternativa |
+| [Portable](https://github.com/minysito/AS-x11/releases/download/v0.3.3/AS-x11-0.3.3.exe) | Ejecutar sin instalar |
+| [Fuentes completas](https://github.com/minysito/AS-x11/releases/download/v0.3.3/AS-x11-0.3.3-source.zip) | Código, recursos, licencias y herramientas de compilación |
+| [SHA256](https://github.com/minysito/AS-x11/releases/download/v0.3.3/SHA256.txt) | Comprobar integridad de los archivos |
 
 Las descargas versionadas se conservan en Releases. El código también se puede
 descargar desde Code → Download ZIP o clonar. No se publica el software original
@@ -27,7 +27,7 @@ del fabricante ni se necesita para compilar esta app.
 - Cambiar etapas de DPI, colores, efectos LED, brillo y tiempos de energía.
 - Seleccionar **125, 250, 500 o 1000 Hz**.
 - Configurar **cinco clics**: izquierdo, derecho, central y los dos laterales.
-- Explorar el X11 en **SVG vectorial interactivo**, con vistas superior y lateral,
+- Explorar el X11 en **SVG vectorial interactivo**, con vistas superior y de perspectiva,
   rueda acanalada animada, respuesta a las pulsaciones y LED vinculado al perfil.
 - Ver batería en la bandeja del sistema y activar **Iniciar con Windows** mediante una casilla.
 - Seleccionar perfiles y exportar/importar copias JSON.

@@ -1749,3 +1749,21 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px s
 .mouse-refined .led-core {stroke-width:6;}
 .mouse-refined .led-aura {stroke-width:13;filter:blur(5px);}
 .mouse-refined .mouse-led:hover .led-aura,.mouse-refined .mouse-led:focus-visible .led-aura {stroke-width:23;}
+/* The reference silhouette stays readable until a control is hovered or focused. */
+.mouse-refined {background:radial-gradient(ellipse at 50% 42%,#252b35 0%,#131923 55%,#0a0e18 100%);}
+.mouse-refined .mouse-vector {height:440px;}
+.mouse-refined .mouse-pin {opacity:0;transition:opacity 160ms;pointer-events:none;}
+.mouse-refined .mouse-zone:hover .mouse-pin,.mouse-refined .mouse-zone:focus-visible .mouse-pin {opacity:1;}
+.mouse-refined .mouse-zone.selected > path {stroke:#080c14;filter:none;}
+.mouse-refined .mouse-zone:hover > path,.mouse-refined .mouse-zone:focus-visible > path {stroke:#00d4e5;}
+.mouse-refined .view-top .mouse-pin text {font-size:29px;}
+.mouse-refined .view-top .mouse-zone > path {stroke-width:4;}
+.mouse-refined .view-top .mouse-zone:hover {transform:translateY(-3px);}
+.mouse-refined .view-top .led-mask {stroke-width:19;}
+.mouse-refined .view-top .led-core {stroke-width:15;}
+.mouse-refined .view-top .led-aura {stroke-width:23;filter:blur(7px);}
+.mouse-refined .view-top .mouse-led:hover .led-aura {stroke-width:33;}
+.mouse-refined .view-side .mouse-pin text {font-size:25px;}
+.mouse-refined .view-side .led-core {stroke-width:9;}
+.mouse-refined .view-side .led-mask {stroke-width:12;}
+.mouse-refined .view-side .led-aura {stroke-width:19;}
