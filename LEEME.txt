@@ -1,0 +1,60 @@
+AS x11 - Codigo fuente y todo lo necesario
+==========================================
+
+Esta carpeta contiene TODO lo necesario para compilar y usar el programa.
+
+
+1) USARLO SIN COMPILAR (lo mas rapido)
+--------------------------------------
+Abre la carpeta "Instaladores" y ejecuta:
+
+    AS x11_0.3.2_x64-setup.exe
+
+Sigue el asistente. No necesitas nada mas.
+
+
+2) COMPILAR DESDE EL CODIGO
+---------------------------
+Requisitos (instalar una sola vez):
+
+    - Node.js 20.19+ o 22.12+      https://nodejs.org
+    - Rust (toolchain MSVC)        https://rustup.rs
+    - Visual Studio 2022 (C++ Build Tools)
+    - WebView2 Runtime (ya viene con Windows 10/11)
+
+IMPORTANTE: esta carpeta YA incluye la carpeta "node_modules", por lo que
+NO hace falta ejecutar "npm install".
+
+Abre una consola (PowerShell) en ESTA carpeta y ejecuta:
+
+    npm run tauri dev        (probar en modo desarrollo)
+    npm run tauri build      (generar los instaladores)
+
+Nota: la primera compilacion descarga las dependencias de Rust desde
+internet (solo la primera vez). Los instaladores resultantes se guardan en:
+
+    src-tauri\target\release\bundle\
+
+
+3) ESTRUCTURA
+-------------
+    src\             Interfaz de usuario (React + TypeScript)
+    src-tauri\       Motor del programa (Rust): protocolo HID, comandos,
+                     sincronizacion con Google Drive, preferencias
+    public\          Recursos
+    Instaladores\    Instaladores ya compilados (.exe y .msi)
+    package.json     Dependencias y ordenes de compilacion
+    README.md        Documentacion del proyecto
+
+
+4) NOTAS
+--------
+- El programa funciona por cable USB y por 2.4 GHz; detecta el enlace solo.
+- Los instaladores no estan firmados, asi que Windows SmartScreen puede
+  mostrar un aviso: pulsa "Mas informacion" -> "Ejecutar de todas formas".
+- La sincronizacion con Google Drive necesita tu propio Client ID (se
+  explica en Ajustes dentro de la app).
+
+Licencia MIT. Proyecto no oficial, sin relacion con Attack Shark.
+
+

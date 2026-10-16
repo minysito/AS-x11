@@ -1,0 +1,30 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules
+dist
+dist-ssr
+
+# Rust / Tauri
+src-tauri/target
+src-tauri/gen
+
+# Editor / OS
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+*.local
+.research/
+.tauri/
+src-tauri/.tauri/
+Instaladores/
+release/
+validacion/
+/VALIDACION*.md
+public/raton-x11-original.png
+public/raton-x11.svg
+raton-x11-animado.html

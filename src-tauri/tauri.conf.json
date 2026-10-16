@@ -1,0 +1,61 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "AS x11",
+  "version": "0.3.2",
+  "identifier": "com.openshark.x11",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "AS x11 · Configurador",
+        "width": 1120,
+        "height": 760,
+        "minWidth": 920,
+        "minHeight": 620,
+        "center": true,
+        "decorations": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "useLocalToolsDir": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "nsis": {
+        "installMode": "currentUser",
+        "languages": [
+          "Spanish",
+          "English"
+        ],
+        "displayLanguageSelector": false,
+        "installerIcon": "icons/icon.ico",
+        "headerImage": "nsis/header.bmp",
+        "sidebarImage": "nsis/sidebar.bmp",
+        "uninstallerHeaderImage": "nsis/unheader.bmp",
+        "installerHooks": "nsis/installer-hooks.nsh",
+        "startMenuFolder": "AS x11"
+      }
+    },
+    "license": "GPL-3.0-or-later",
+    "resources": {
+      "../LICENSE": "LICENSE",
+      "../LICENSES/": "LICENSES/"
+    }
+  }
+}
