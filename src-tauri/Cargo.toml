@@ -1,6 +1,6 @@
 [package]
 name = "openshark"
-version = "0.3.3"
+version = "0.3.4"
 description = "A modern, fast configurator for the Attack Shark X11 gaming mouse"
 authors = ["AS x11 contributors"]
 license = "GPL-3.0-or-later"

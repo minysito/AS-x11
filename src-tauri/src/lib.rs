@@ -12,7 +12,10 @@ use tauri::Manager;
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     tauri::Builder::default()
-        .plugin(tauri_plugin_single_instance::init(|app, _, _| tray::show(app)))
+        .plugin(tauri_plugin_single_instance::init(|app, args, _| {
+            // A repeated Windows startup launch must not reveal the existing window.
+            if !args.iter().any(|arg| arg == "--background") { tray::show(app); }
+        }))
         .plugin(tauri_plugin_autostart::Builder::new().args(["--background"]).build())
         .plugin(tauri_plugin_opener::init())
         .plugin(tauri_plugin_notification::init())
@@ -26,9 +29,9 @@ pub fn run() {
             if app.autolaunch().is_enabled().unwrap_or(false) {
                 commands::set_autostart(app.handle().clone(),true).map_err(std::io::Error::other)?;
             }
-            if std::env::args().any(|a| a == "--background") {
-                if let Some(window) = app.get_webview_window("main") { let _ = window.hide(); }
-            }
+            // The configured window starts hidden, so autostart cannot flash or steal focus.
+            // Only an explicit interactive launch reveals it after initialization.
+            if !std::env::args().any(|a| a == "--background") { tray::show(app.handle()); }
             Ok(())
         })
         .on_window_event(|window, event| {

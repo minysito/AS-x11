@@ -1,17 +1,7 @@
-AS x11 es un configurador Windows x64 no oficial para el Attack Shark X11, publicado bajo GPL-3.0-or-later.
+AS x11 0.3.4 corrige el arranque automático de Windows:
 
-Descarga **AS-x11-0.3.3-setup.exe** para instalar, **AS-x11-0.3.3-x64.msi** como alternativa o **AS-x11-0.3.3.exe** para uso portable. Las fuentes completas están en **AS-x11-0.3.3-source.zip** y en este repositorio. Comprueba las huellas en **SHA256.txt**.
+- La ventana se crea oculta y sin foco; el inicio automático permanece en la bandeja.
+- Un segundo arranque con --background tampoco abre la ventana de una instancia existente.
+- Abrir el acceso directo manualmente o pulsar el icono de bandeja muestra la ventana normalmente.
 
-- DPI, iluminación, sondeo de 125–1000 Hz y cinco clics configurables, con cambios automáticos.
-- Ilustración vectorial del X11 con vistas superior y de perspectiva, rueda interactiva, respuesta al clic y LED ligado al perfil.
-- Batería en la bandeja, inicio con Windows opcional y recuperación de radio.
-- Navegación mediante caché para evitar consultas HID al cambiar de sección.
-- El instalador conserva la opción de inicio y actualiza la ruta al actualizar.
-
-Instala esta versión para actualizar accesos antiguos; descargar un portable no reemplaza la instalación anterior. Con «Iniciar con Windows» marcado, la app arranca en la bandeja sin abrir la ventana. Mueve el ratón para despertarlo si está suspendido.
-
-Validado físicamente en un X11 por cable y 2,4 GHz. Consulta la guía de uso y la validación del repositorio para los límites: X11SE/Bluetooth/base RGB y cuentas externas no están validados; no incluye editor de macros. Binarios sin firma comercial.
-
-En 0.3.3 se redibujan los contornos según las referencias del X11 negro: proporción superior, perspectiva de tres cuartos, separación de clics, rueda estriada, laterales y LED. Los marcadores aparecen al pasar el cursor o enfocar con teclado. La ilustración utiliza trazados SVG y sombreado procedural; no incorpora fotografías.
-
-Batería: distintivo propio de alto contraste en la bandeja, con cifras blancas grandes sobre fondo oscuro y nivel inferior. Porcentaje legible también en la barra lateral, independiente del color de estado.
+Windows x64. Fuentes GPL-3.0-or-later. Instalador, portable, MSI y fuentes adjuntos; huellas en SHA256.txt.
